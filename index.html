@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Trayo Nails | Luxury Nail Studio in Kilimani, Nairobi | Book Your Appointment</title>
+  <meta name="description" content="Trayo Nails is Nairobi's premier luxury nail studio in Kilimani, offering gel, acrylic, nail art, pedicures and more. Book your appointment online today." />
+  <meta name="keywords" content="nail salon Nairobi, luxury nails Kilimani, gel nails Nairobi, acrylic nails Nairobi, nail art Nairobi, pedicure Kilimani, nail studio Nairobi CBD, book nail appointment Nairobi, Trayo Nails" />
+  <meta name="author" content="Trayo Nails" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Trayo Nails | Luxury Nail Studio in Kilimani, Nairobi" />
+  <meta property="og:description" content="Nairobi's luxury nail destination in Kilimani. Gel, acrylic, nail art & pedicures. Book your appointment online." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200" />
+  <meta property="og:url" content="https://www.trayonails.co.ke" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trayo Nails | Luxury Nail Studio, Kilimani Nairobi" />
+  <meta name="twitter:description" content="Luxury nail care in Kilimani, Nairobi — gel, acrylic, art & pedicures. Book online." />
+
+  <!-- Structured Data (Local Business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Trayo Nails",
+    "description": "Luxury nail studio in Kilimani, Nairobi offering gel, acrylic, nail art, and pedicures.",
+    "url": "https://www.trayonails.co.ke",
+    "telephone": "+254701017988",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kilimani",
+      "addressLocality": "Nairobi",
+      "addressRegion": "Nairobi County",
+      "addressCountry": "KE"
+    },
+    "openingHours": ["Mo-Sa 09:00-19:00", "Su 10:00-17:00"],
+    "priceRange": "KSh",
+    "sameAs": [
+      "https://www.instagram.com/trayonail",
+      "https://www.tiktok.com/@trayonail"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8D5A3;
+      --gold-pale: #F7F0DC;
+      --black: #0D0B09;
+      --dark: #1A1610;
+      --charcoal: #2C2820;
+      --white: #FAF8F4;
+      --rose: #C4836A;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.5;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 5%;
+      background: linear-gradient(180deg, rgba(13,11,9,0.95) 0%, transparent 100%);
+      backdrop-filter: blur(2px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      transition: background 0.4s;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.6rem 1.5rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 70% 40%, rgba(201,168,76,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(196,131,106,0.1) 0%, transparent 60%),
+        linear-gradient(160deg, #0D0B09 30%, #1f1a12 100%);
+    }
+
+    .hero-img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 52%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.35;
+      mask-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%, transparent 80%);
+      -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%, transparent 80%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 0 5%;
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
+      font-weight: 300;
+      line-height: 1.0;
+      color: var(--white);
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      font-weight: 200;
+      letter-spacing: 0.08em;
+      color: rgba(250,248,244,0.6);
+      max-width: 420px;
+      line-height: 1.8;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 1rem 2.5rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--gold-light);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 1rem 2.5rem;
+      border: 1px solid rgba(201,168,76,0.4);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-strip {
+      background: var(--gold);
+      padding: 0.8rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-inner {
+      display: inline-flex;
+      animation: marquee 20s linear infinite;
+      gap: 0;
+    }
+
+    .marquee-item {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--black);
+      padding: 0 3rem;
+    }
+
+    .marquee-dot {
+      color: var(--charcoal);
+      opacity: 0.5;
+    }
+
+    /* ── SECTION BASE ── */
+    section { padding: 7rem 5%; }
+
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title em { font-style: italic; color: var(--gold); }
+
+    /* ── SERVICES ── */
+    #services { background: var(--dark); }
+
+    .services-intro {
+      max-width: 500px;
+      margin-bottom: 4rem;
+    }
+
+    .services-intro p {
+      font-size: 0.9rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.55);
+      line-height: 1.8;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+    }
+
+    .service-card {
+      background: var(--charcoal);
+      padding: 2.5rem 2rem;
+      border: 1px solid rgba(201,168,76,0.08);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s;
+      cursor: default;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 2px;
+      background: var(--gold);
+      transition: width 0.4s;
+    }
+
+    .service-card:hover::before { width: 100%; }
+    .service-card:hover { background: #2f2a20; transform: translateY(-4px); }
+
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+
+    .service-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+
+    .service-desc {
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.5);
+      line-height: 1.7;
+      margin-bottom: 1.4rem;
+    }
+
+    .service-price {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--black); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 280px 280px;
+      gap: 4px;
+      margin-top: 3rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      position: relative;
+      background: var(--charcoal);
+    }
+
+    .gallery-item:first-child { grid-row: 1 / 3; }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      filter: brightness(0.85) saturate(0.9);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+      filter: brightness(1) saturate(1.1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,11,9,0.7) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+    .gallery-overlay span {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    /* ── BOOKING ── */
+    #booking {
+      background: linear-gradient(135deg, var(--dark) 0%, #12100A 100%);
+      border-top: 1px solid rgba(201,168,76,0.15);
+    }
+
+    .booking-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+      max-width: 1100px;
+    }
+
+    .booking-left p {
+      font-size: 0.88rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.55);
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
+    }
+
+    .booking-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .booking-detail-icon {
+      color: var(--gold);
+      font-size: 1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .booking-detail-text {
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.6);
+      line-height: 1.6;
+    }
+
+    .booking-detail-text strong {
+      display: block;
+      font-weight: 400;
+      color: var(--white);
+      font-size: 0.82rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .calendly-notice {
+      margin-top: 2rem;
+      padding: 1.2rem 1.5rem;
+      border: 1px solid rgba(201,168,76,0.25);
+      background: rgba(201,168,76,0.04);
+    }
+
+    .calendly-notice p {
+      font-size: 0.78rem;
+      color: var(--gold-light);
+      margin-bottom: 0.8rem;
+    }
+
+    /* ── FORM ── */
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .form-group label {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.2);
+      color: var(--white);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 200;
+      padding: 0.85rem 1rem;
+      outline: none;
+      transition: border-color 0.3s;
+      width: 100%;
+      appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .form-group select option { background: var(--dark); color: var(--white); }
+
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .form-submit {
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 1.1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+      border: 1px solid rgba(201,168,76,0.3);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .form-success h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-success p {
+      font-size: 0.85rem;
+      color: rgba(250,248,244,0.6);
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--black); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+      margin-top: 3rem;
+    }
+
+    .testimonial-card {
+      background: var(--charcoal);
+      padding: 2.5rem 2rem;
+      border: 1px solid rgba(201,168,76,0.08);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 1.2rem; right: 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem;
+      color: var(--gold);
+      opacity: 0.2;
+      line-height: 1;
+    }
+
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.88rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.7);
+      line-height: 1.8;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonial-author {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      padding: 4rem 5% 2rem;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand-desc {
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.45);
+      line-height: 1.8;
+      max-width: 260px;
+    }
+
+    .footer-col-title {
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.5);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--gold-light); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(201,168,76,0.1);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-bottom p {
+      font-size: 0.72rem;
+      font-weight: 200;
+      color: rgba(250,248,244,0.3);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .social-links a {
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(250,248,244,0.4);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover { color: var(--gold); }
+
+    /* ── MOBILE NAV TOGGLE ── */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .gallery-item:first-child { grid-row: auto; }
+      .booking-wrapper { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-toggle { display: flex; }
+      .hero-img { width: 100%; opacity: 0.18; }
+      .form-row { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Trayo Nails</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#booking">Contact</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta">Book Now</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <img class="hero-img" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&q=80" alt="Luxury nail art close-up" loading="eager" />
+    <div class="hero-content">
+      <p class="hero-eyebrow">Luxury Nail Studio · Kilimani, Nairobi</p>
+      <h1 class="hero-title">Where <em>Beauty</em><br>Meets<br>Precision</h1>
+      <p class="hero-sub">Indulge in flawless nail artistry crafted with premium products and a discerning eye for detail.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn-gold">Book an Appointment</a>
+        <a href="#services" class="btn-outline">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-inner">
+      <span class="marquee-item">Gel Extensions <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Acrylic Sets <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Nail Art <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Pedicures <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Luxury Manicures <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Nail Repair <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Gel Extensions <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Acrylic Sets <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Nail Art <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Pedicures <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Luxury Manicures <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">Nail Repair <span class="marquee-dot">◆</span></span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-intro">
+      <p class="section-label">Our Craft</p>
+      <h2 class="section-title">Signature <em>Services</em></h2>
+      <p>Every treatment is a ritual — designed to make you feel as extraordinary as you look.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <span class="service-icon">💅</span>
+        <h3 class="service-name">Gel Manicure</h3>
+        <p class="service-desc">Long-lasting, chip-free gel polish with a mirror-glass finish. Available in 200+ shades.</p>
+        <span class="service-price">From $45</span>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">✨</span>
+        <h3 class="service-name">Acrylic Full Set</h3>
+        <p class="service-desc">Sculpted acrylic extensions built for length, strength, and statement-making style.</p>
+        <span class="service-price">From $65</span>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">🎨</span>
+        <h3 class="service-name">Nail Art</h3>
+        <p class="service-desc">Bespoke hand-painted designs, chrome powders, embellishments, and 3D art — your vision, realized.</p>
+        <span class="service-price">From $25 add-on</span>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">🌸</span>
+        <h3 class="service-name">Luxury Pedicure</h3>
+        <p class="service-desc">A full pampering ritual — soak, exfoliation, massage, and a flawless finish from heel to toe.</p>
+        <span class="service-price">From $55</span>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">💎</span>
+        <h3 class="service-name">Gel Extensions</h3>
+        <p class="service-desc">Lightweight, natural-feeling gel tips for length without the bulk. Perfect for everyday elegance.</p>
+        <span class="service-price">From $75</span>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">🔧</span>
+        <h3 class="service-name">Nail Repair & Fill</h3>
+        <p class="service-desc">Precision repairs and infill treatments to keep your set looking immaculate between appointments.</p>
+        <span class="service-price">From $20</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <p class="section-label">Portfolio</p>
+    <h2 class="section-title">Our <em>Artistry</em></h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80" alt="Luxury nail art design" loading="lazy" />
+        <div class="gallery-overlay"><span>Nail Art</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1604654894761-fe23c5c30f7d?w=600&q=80" alt="Gel manicure" loading="lazy" />
+        <div class="gallery-overlay"><span>Gel Set</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80" alt="Acrylic nail design" loading="lazy" />
+        <div class="gallery-overlay"><span>Acrylics</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1604654894652-ae2f694f6b95?w=600&q=80" alt="Pedicure treatment" loading="lazy" />
+        <div class="gallery-overlay"><span>Pedicure</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80" alt="Chrome nail art" loading="lazy" />
+        <div class="gallery-overlay"><span>Chrome Art</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking">
+    <div class="booking-wrapper">
+      <div class="booking-left">
+        <p class="section-label">Reserve Your Session</p>
+        <h2 class="section-title">Book Your <em>Appointment</em></h2>
+        <p>Fill in the form and we'll confirm your appointment within 24 hours. Prefer to book instantly? Use our online scheduler below.</p>
+
+        <div class="booking-detail">
+          <span class="booking-detail-icon">🕐</span>
+          <div class="booking-detail-text">
+            <strong>Opening Hours</strong>
+            Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 5:00 PM
+          </div>
+        </div>
+        <div class="booking-detail">
+          <span class="booking-detail-icon">📍</span>
+          <div class="booking-detail-text">
+            <strong>Location</strong>
+            Kilimani, Nairobi CBD, Kenya
+          </div>
+        </div>
+        <div class="booking-detail">
+          <span class="booking-detail-icon">📞</span>
+          <div class="booking-detail-text">
+            <strong>Phone / WhatsApp / SMS</strong>
+            <a href="tel:+254701017988" style="color:inherit;text-decoration:none;">0701 017 988</a>
+          </div>
+        </div>
+        <div class="booking-detail">
+          <span class="booking-detail-icon">💬</span>
+          <div class="booking-detail-text">
+            <strong>WhatsApp Us</strong>
+            <a href="https://wa.me/254701017988" target="_blank" style="color:var(--gold-light);text-decoration:none;">Chat on WhatsApp →</a>
+          </div>
+        </div>
+        <div class="booking-detail">
+          <span class="booking-detail-icon">📸</span>
+          <div class="booking-detail-text">
+            <strong>Follow Us</strong>
+            <a href="https://instagram.com/trayonail" target="_blank" style="color:inherit;text-decoration:none;">@trayonail</a> on Instagram & TikTok
+          </div>
+        </div>
+
+        <div class="calendly-notice">
+          <p>Prefer instant online booking? Schedule directly via Calendly:</p>
+          <a href="https://calendly.com/YOUR-LINK" target="_blank" class="btn-gold" style="font-size:0.68rem; padding:0.7rem 1.5rem;">Open Booking Calendar →</a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div>
+        <div class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (000) 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Gel Manicure</option>
+              <option>Acrylic Full Set</option>
+              <option>Nail Art</option>
+              <option>Luxury Pedicure</option>
+              <option>Gel Extensions</option>
+              <option>Nail Repair & Fill</option>
+              <option>Other / Consultation</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="" disabled selected>Select time</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Any special requests, inspo, or nail references..."></textarea>
+          </div>
+          <button type="button" class="form-submit" onclick="submitForm()">Request Appointment</button>
+        </div>
+
+        <div class="form-success" id="formSuccess">
+          <h3>Thank You ✦</h3>
+          <p>Your request has been received. We'll confirm your appointment within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <p class="section-label">Client Love</p>
+    <h2 class="section-title">What They're <em>Saying</em></h2>
+    <div class="testimonials-grid">
+      <article class="testimonial-card">
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">The most flawless gel set I've ever had. The attention to detail is unreal — I get compliments every single day.</p>
+        <span class="testimonial-author">— Amara J.</span>
+      </article>
+      <article class="testimonial-card">
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">Trayo Nails is a whole experience. The ambiance, the products, the skill — it's luxury through and through.</p>
+        <span class="testimonial-author">— Sofia R.</span>
+      </article>
+      <article class="testimonial-card">
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">I showed them a reference photo and they literally recreated it perfectly. I won't go anywhere else.</p>
+        <span class="testimonial-author">— Priya M.</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand-name">Trayo Nails</p>
+        <p class="footer-brand-desc">Nairobi's luxury nail studio in the heart of Kilimani — where precision, artistry, and glamour meet every visit.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="#services">Gel Manicure</a></li>
+          <li><a href="#services">Acrylic Set</a></li>
+          <li><a href="#services">Nail Art</a></li>
+          <li><a href="#services">Pedicure</a></li>
+          <li><a href="#services">Extensions</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Visit Us</p>
+        <ul class="footer-links">
+          <li><a href="#">Kilimani, Nairobi CBD</a></li>
+          <li><a href="#">Mon–Sat: 9am–7pm</a></li>
+          <li><a href="#">Sun: 10am–5pm</a></li>
+          <li><a href="tel:+254701017988">0701 017 988</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Follow</p>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/trayonail" target="_blank">Instagram</a></li>
+          <li><a href="https://tiktok.com/@trayonail" target="_blank">TikTok</a></li>
+          <li><a href="https://wa.me/254701017988" target="_blank">WhatsApp</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Trayo Nails. All rights reserved. Kilimani, Nairobi.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/trayonail" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/@trayonail" target="_blank">TikTok</a>
+        <a href="https://wa.me/254701017988" target="_blank">WhatsApp</a>
+        <a href="#booking">Book</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set min date for booking to today
+    document.getElementById('date').min = new Date().toISOString().split('T')[0];
+
+    // Form submission handler
+    function submitForm() {
+      const required = ['fname', 'lname', 'email', 'service', 'date'];
+      let valid = true;
+      required.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) {
+          el.style.borderColor = '#C4836A';
+          valid = false;
+        } else {
+          el.style.borderColor = 'rgba(201,168,76,0.2)';
+        }
+      });
+      if (!valid) return;
+      document.getElementById('bookingForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+
+    // Smooth nav scroll + active
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .testimonial-card, .gallery-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
